@@ -26,7 +26,7 @@ pipeline {
 		stage('Deploy') {
 			when {
 				expression { env.GIT_BRANCH == 'origin/main' }
-				berforeInput true
+				beforeInput true
 			}
 			input {
 				message 'Deploy the application?'
